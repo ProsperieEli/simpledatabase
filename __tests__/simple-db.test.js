@@ -29,7 +29,7 @@ describe('simple database', () => {
       .save(file1)
       .then(() => saving.save(file2))
       .then(() => saving.getAll())
-      .then((files) => expect(files).toEqual([file2, file1]));
+      .then((files) => expect(files).toEqual([file1, file2]));
   });
 
   it('get by ID', async () => {
